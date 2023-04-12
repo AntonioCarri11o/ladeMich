@@ -2,6 +2,7 @@ package mx.edu.utez.Int_DBN.service;
 
 import mx.edu.utez.Int_DBN.dto.AlbumDto;
 import mx.edu.utez.Int_DBN.message.ResourceNotFoundException;
+import mx.edu.utez.Int_DBN.model.Proove;
 import mx.edu.utez.Int_DBN.model.album.Album;
 import mx.edu.utez.Int_DBN.model.album.AlbumRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,11 @@ public class AlbumService {
         return albumRepository.findAll();
     }
 
+    public Proove proove(){
+        Proove hola= new Proove();
+        hola.setRes("hola");
+        return hola;
+    }
     public Album getAlbumById(int id) throws ResourceNotFoundException {
         return albumRepository.findById(id).orElseThrow(()->new ResourceNotFoundException("Not Found"));
     }

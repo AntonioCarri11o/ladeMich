@@ -19,10 +19,13 @@ public class AlbumController {
     AlbumService albumService;
 
     @GetMapping("/")
+    public ResponseEntity proove(){return  ResponseEntity.ok(albumService.proove());
+    }
+    /*
     public ResponseEntity<List<Album>> getAllAlbum(){
         return ResponseEntity.ok(albumService.getAllAlbum());
     }
-
+*/
     @GetMapping("/{id}")
     public ResponseEntity<Album> getAlbumById(@PathVariable("id") int id) throws ResourceNotFoundException {
         return ResponseEntity.ok(albumService.getAlbumById(id));
