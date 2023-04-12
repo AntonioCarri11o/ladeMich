@@ -17,6 +17,7 @@ mx\edu\utez\Int_DBN\message\ResourceNotFoundException.class
 mx\edu\utez\Int_DBN\dto\SongDto.class
 mx\edu\utez\Int_DBN\model\members\Members.class
 mx\edu\utez\Int_DBN\model\songs\SongRepository.class
+mx\edu\utez\Int_DBN\model\Proove.class
 mx\edu\utez\Int_DBN\model\marcas\MarcaRepository.class
 mx\edu\utez\Int_DBN\dto\MessageDto.class
 mx\edu\utez\Int_DBN\model\album\AlbumRepository.class

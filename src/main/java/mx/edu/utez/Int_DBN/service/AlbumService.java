@@ -18,15 +18,12 @@ public class AlbumService {
     @Autowired
     AlbumRepository albumRepository;
 
-    public List<Album> getAllAlbum(){
-        return albumRepository.findAll();
+    public /*List<Album>*/ Album getAllAlbum(){
+        Album album=new Album(1,"song","fecha",12,300);
+        return album;
+        //return albumRepository.findAll();
     }
 
-    public Proove proove(){
-        Proove hola= new Proove();
-        hola.setRes("hola");
-        return hola;
-    }
     public Album getAlbumById(int id) throws ResourceNotFoundException {
         return albumRepository.findById(id).orElseThrow(()->new ResourceNotFoundException("Not Found"));
     }
